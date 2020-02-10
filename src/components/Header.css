@@ -1,0 +1,22 @@
+header {
+  background-color: green;
+}
+
+.top-panel {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+
+.logo {
+  background-image: url(/public/img/56e72b0cda41b_thumb900.jpg);
+  width: 200px;
+  height: 55px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.li-active {
+  background: grey;
+}
