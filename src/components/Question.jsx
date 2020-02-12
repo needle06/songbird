@@ -7,10 +7,10 @@ import birdsData from '../data/birdsData.js'
 export default class Question extends React.Component  {
   constructor(props) {
     super(props);
-    const { currentLevel, currentBird, answerHidden} = props;
+    const { currentLevel, hiddenBird, answerHidden} = props;
     this.state = {
       currentLevel,
-      currentBird,
+      hiddenBird,
       answerHidden
     }
   }
@@ -20,8 +20,8 @@ export default class Question extends React.Component  {
     if (nextProps.currentLevel !== prevState.currentLevel) {
       dict.currentLevel = nextProps.currentLevel;
     }
-    if (nextProps.currentBird !== prevState.currentBird) {
-      dict.currentBird = nextProps.currentBird;
+    if (nextProps.hiddenBird !== prevState.hiddenBird) {
+      dict.hiddenBird = nextProps.hiddenBird;
     }
     if (nextProps.answerHidden !== prevState.answerHidden) {
       dict.answerHidden = nextProps.answerHidden;
@@ -30,8 +30,8 @@ export default class Question extends React.Component  {
   }
 
   render () {
-    const {currentLevel, currentBird, answerHidden} = this.state;
-    const selectedBird = birdsData[currentLevel][currentBird];
+    const {currentLevel, hiddenBird, answerHidden} = this.state;
+    const selectedBird = birdsData[currentLevel][hiddenBird];
 
     return (
       <div className="bird-random">
@@ -60,13 +60,13 @@ export default class Question extends React.Component  {
 
 Question.propTypes = {
   currentLevel: PropTypes.number,
-  currentBird: PropTypes.number,
+  hiddenBird: PropTypes.number,
   answerHidden: PropTypes.bool,
 
 };
 
 Question.defaultProps = {
   currentLevel: 0,
-  currentBird: 0,
+  hiddenBird: 0,
   answerHidden: true,
 };
