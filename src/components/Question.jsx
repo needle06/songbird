@@ -35,7 +35,7 @@ export default class Question extends React.Component  {
 
     return (
       <div className="bird-random">
-          <img src={answerHidden ? '/public/img/bird.jpg' : selectedBird.image} alt="bird" className="bird-image"/>
+          <img src={answerHidden ? '/img/bird.jpg' : selectedBird.image} alt="bird" className="bird-image"/>
           <div>
             <ul className="list-group list-group-flush">
               <li className="list-group-item">
