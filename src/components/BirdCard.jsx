@@ -4,7 +4,7 @@ import ReactAudioPlayer from 'react-audio-player';
 import './BirdCard.css';
 import birdsData from '../data/birdsData.js'
 
-export default class Header extends React.Component  {
+export default class BirdCard extends React.Component  {
   constructor(props) {
     super(props);
     const { currentLevel, currentBird} = props;
@@ -58,13 +58,13 @@ export default class Header extends React.Component  {
   }
 }
 
-Header.propTypes = {
+BirdCard.propTypes = {
   currentLevel: PropTypes.number,
   currentBird: PropTypes.number,
 
 };
 
-Header.defaultProps = {
+BirdCard.defaultProps = {
   currentLevel: 0,
   currentBird: 0,
 };
