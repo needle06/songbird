@@ -1,0 +1,31 @@
+.birds-list {
+  width: 40%;
+}
+.birds-list:hover {
+  cursor: pointer;
+}
+
+.birds-list .list-group-item:hover {
+  background-color: darkgrey;
+}
+.li-type {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 15px;
+  border-radius: 50%;
+  background-color: #444;
+  transition: .1s;
+}
+
+.li-green{
+  background-color: green;
+}
+.li-red{
+  background-color: red;
+}
+@media (max-width: 414px) {
+  .birds-list {
+    width: 100%;
+  }
+}

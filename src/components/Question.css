@@ -21,3 +21,17 @@
 .bird-name {
   color: white;
 }
+
+@media (max-width: 767px) {
+  .bird-random {
+    display: block;
+  } 
+  .bird-image {
+    display: block;
+    margin: 0 auto;
+  } 
+  .bird-name {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}

@@ -24,7 +24,7 @@ h5 {
 }
 
 .birds-levels-list {
-  background-color: #3f923fde;
+  background-color: #00bc8c;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -43,3 +43,10 @@ h5 {
 .li-active {
   background-color: rgb(161, 199, 161);
 }
+
+@media (max-width: 767px) {
+  .birds-levels-list {
+    display: block;
+  } 
+}
+
