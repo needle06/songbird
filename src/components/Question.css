@@ -1,0 +1,37 @@
+.bird-random {
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 25px;
+  background-color:#323838;
+}
+.bird-random .list-group {
+  margin-left: 40px;
+  background-color: inherit;
+}
+.list-group-item {
+  background-color:#323838;
+}
+.bird-image {
+  width: 200px;
+  height: 155px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.bird-name {
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .bird-random {
+    display: block;
+  } 
+  .bird-image {
+    display: block;
+    margin: 0 auto;
+  } 
+  .bird-name {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}

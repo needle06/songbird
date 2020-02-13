@@ -1,0 +1,10 @@
+.btn-game-over {
+  background-color: #00bc8c;
+  width: 100%;
+  padding: 15px;
+  margin: 25px 0;
+}
+h1, .final-score {
+  text-align: center;
+  margin-top: 30px;
+}

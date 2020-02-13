@@ -1,0 +1,55 @@
+.bird-card {
+  display: flex;
+  padding: 1rem;
+  border: 1px solid #444;
+  width: 55%;
+  background-color:#323838;
+}
+
+.card-body {
+  display: flex;
+
+  padding: 0;
+  flex-direction: row;
+  min-height: 173px;
+}
+
+.bird-name-song {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+.bird-image {
+    width: 200px;
+    height: 155px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .card-body {
+    flex-direction: column;
+  }
+  .bird-name-song {
+    margin: 15px auto;
+    padding-left: 0;
+  }
+  .react-audio-player {
+    width: 90%;
+  }
+  .bird-description {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 414px) {
+  .bird-card {
+    width: 100%;
+    margin-top: 15px;
+  }
+}

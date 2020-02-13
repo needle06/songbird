@@ -1,0 +1,52 @@
+header {
+  flex-direction: column;
+  margin-top: .5rem;
+}
+
+.top-panel {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+
+.logo {
+  background-image: url(/img/56e72b0cda41b_thumb900.jpg);
+  width: 200px;
+  height: 55px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h5 {
+  margin-right: .5rem;
+  color: azure;
+}
+
+.birds-levels-list {
+  background-color: #00bc8c;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.birds-levels-list li {
+  text-align: center;
+  flex: auto;
+}
+
+.li-active {
+  background-color: rgb(161, 199, 161);
+}
+
+@media (max-width: 767px) {
+  .birds-levels-list {
+    display: block;
+  } 
+}
+
